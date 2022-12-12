@@ -30,6 +30,8 @@ RUN python_ver=$(python3 -V | awk '{print $2}') \
     && git config --global pull.ff only \
     && git clone -b master ${REPO_URL} ${WORKDIR} --recurse-submodule \
     && git config --global --add safe.directory ${WORKDIR}
+
+COPY config /config
 EXPOSE 3000
 # VOLUME ["/config"]
 
