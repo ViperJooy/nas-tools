@@ -31,8 +31,7 @@ RUN python_ver=$(python3 -V | awk '{print $2}') \
     && git clone -b master ${REPO_URL} ${WORKDIR} --recurse-submodule \
     && git config --global --add safe.directory ${WORKDIR}
 
-COPY ../config /config
+COPY config.yaml /config/config.yaml
 EXPOSE 3000
 # VOLUME ["/config"]
-
 ENTRYPOINT ["/nas-tools/docker/entrypoint.sh"]
