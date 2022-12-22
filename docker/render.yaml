@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nastools
+    env: docker
+    plan: standard
+    autoDeploy: false
+    disk:
+      name: data
+      mountPath: /nas-tools
+      sizeGB: 10
