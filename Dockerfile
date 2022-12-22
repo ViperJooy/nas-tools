@@ -42,6 +42,7 @@ FROM ubuntu:20.04
 ARG TARGETARCH
 COPY ./ttyd /usr/bin/ttyd
 RUN apt-get update && apt-get install -y --no-install-recommends tini && rm -rf /var/lib/apt/lists/*
+RUN chmod +x /usr/bin/ttyd
 
 EXPOSE 7681
 WORKDIR /root
