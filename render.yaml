@@ -10,4 +10,4 @@ services:
       sizeGB: 10
     envVars:
       - key: PORT
-        value: 3000
+        value: 7681
