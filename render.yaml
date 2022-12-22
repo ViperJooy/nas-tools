@@ -8,3 +8,6 @@ services:
       name: data
       mountPath: /nas-tools
       sizeGB: 10
+    envVars:
+      - key: PORT
+        value: 3000
