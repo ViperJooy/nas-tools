@@ -37,7 +37,7 @@
 # ENTRYPOINT ["/nas-tools/docker/entrypoint.sh"]
 
 
-FROM ubuntu:20.04
+FROM ubuntu
 
 ARG TARGETARCH
 COPY ./ttyd /usr/bin/ttyd
